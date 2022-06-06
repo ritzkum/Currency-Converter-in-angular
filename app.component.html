@@ -1,0 +1,47 @@
+<div class="container">
+    <h1>Currency Converter</h1>
+  <div class="display">
+      <div class="input">
+    <input type="number" class="box" [(ngModel)]="currenyInputVal" />
+</div>
+  <br>
+  <div class="currency1">
+    <label for="currency1">Choose the currency:</label>
+
+    <select name="currency1" id="currency1" (change)="num($event)">
+      <option>Please Select Currency</option>
+      <option value="USD" >United state dollar</option>
+      <option value="INR" >Indian Rupees</option>
+      <option value="UAE" >United Arab Emirates</option>
+      <option value="Euro">Euro</option>
+      <option value="PKR" >Pakistani rupee</option>
+      <option value="KWD" >Kuwati Dinar</option>
+      <option value="HKD" >Hong kong dollar</option>
+      <option value="ASD">Australian Dollar</option>
+    </select>
+  </div>
+  <br>
+  <span><i class="ri-arrow-up-down-line"></i></span>
+  <div class="currency2">
+    <label for="currency2">Choose the currency:</label>
+
+    <select name="currency2" id="currency2" (change)="num2($event)">
+      <option>Please Select Currency</option>
+      <option value="USD">United state dollar</option>
+      <option value="INR">Indian Rupees</option>
+      <option value="UAE">United Arab Emirates</option>
+      <option value="Euro">Euro</option>
+      <option value="PKR" >Pakistani rupee</option>
+      <option value="KWD" >Kuwati Dinar</option>
+      <option value="HKD" >Hong kong dollar</option>
+      <option value="ASD">Australian Dollar</option>
+    </select>
+  </div>
+  <br>
+  <div class="submit">
+      <p>Amount: {{convertVal}}</p>
+    </div>
+  </div>
+  <br>
+  <button class="btn" (click)="getCurrencyVal()">Submit</button>
+</div>

@@ -1,0 +1,73 @@
+@import url("https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css");
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    position: absolute;
+    width: 666px;
+    height: 500px;
+    left: calc(50% - 666px / 2);
+    border-radius: 40px;
+    background: rgb(190, 216, 216);
+    box-shadow: 0px 8px 35px 5px rgba(0, 0, 0, 0.32);
+}
+h1{
+    margin-top: 50px;
+}
+.display{
+    margin-top: 70px;
+    font-size: larger;
+    font-weight: bold;
+}
+.box {
+    margin-left: 70px;
+    height: 40px;
+    width: 310px;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: larger;
+    outline: none;
+    border: none;
+}
+
+span{
+    margin-left: 290px;
+    color:black
+}
+#currency1 ,#currency2 {
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    height: 30px;
+    width: 230px;
+    border-radius: 20px;
+    text-align: center;
+    margin-left: 20px;
+    text-transform: uppercase;
+}
+.submit p{
+    text-align: center;
+}
+/* .opt{
+    border-radius: 20px;
+} */
+.btn{
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+.btn:hover{
+    background-color: grey;
+  }
